@@ -20,3 +20,18 @@ window.onload = function()
     }
 
 
+
+    
+    flag=false;
+    
+    var bound = document.querySelectorAll(".boundary");
+    var end = document.querySelectorAll("#end");
+    End.onmouseover = function()
+    {
+        if (Flag ===1 && Touchwall === 0)
+            {
+                Status.innerHTML = "Yup, You Win!!";
+            }
+    }
+    
+   
