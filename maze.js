@@ -1,3 +1,6 @@
+"use struct";
+var startValue = 0;
+
 window.onload = function() 
 {
     document.getElementById("boundary1").onmouseover = start;
@@ -19,19 +22,26 @@ window.onload = function()
         }
     }
 
+    var Flag = 0;
+    var TouchWall = 0;
+    var MazeLeft = 0;
+    var PositionFlag = true;
 
 
-    
-    flag=false;
-    
-    var bound = document.querySelectorAll(".boundary");
-    var end = document.querySelectorAll("#end");
-    End.onmouseover = function()
-    {
-        if (Flag ===1 && Touchwall === 0)
-            {
-                Status.innerHTML = "Yup, You Win!!";
-            }
+End.onmouseover = function()
+      {
+          
+          if(Flag === 1 && TouchWall === 0)
+          {
+              Status.innerHTML = "You Win!";
+          }
+      } 
+      
+document.getElementById("start").onmouseover = function()
+ {
+        Flag = 1;
     }
-    
+
+
    
+  
